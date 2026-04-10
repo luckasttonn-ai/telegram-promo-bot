@@ -1,0 +1,20 @@
+name: Postar Boa Tarde
+
+on:
+  schedule:
+    - cron: '0 16 * * *'   # 13:00 da tarde em horário de Brasília
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar Boa Tarde
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: ☀️ Boa tarde, família! 🌤️  
+As promoções diárias estão bombando agora! 🔥  
+Não perca tempo e venha conferir as ofertas quentinhas do dia.  
+Tem coisa boa te esperando! 🛒💸  
+Qual promoção você vai aproveitar hoje? Me conta! 😊
