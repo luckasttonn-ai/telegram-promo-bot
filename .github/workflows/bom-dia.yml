@@ -1,0 +1,20 @@
+name: Postar Bom Dia
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 7:00 da manhã em horário de Brasília
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar Bom Dia
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: 🌅 Bom dia, família! ☀️🌞  
+Que tal começar o dia caçando as melhores promoções?  
+As ofertas diárias estão fresquinhas e esperando por você! 🛒💰  
+Fique de olho e não perca nenhuma chance de economizar hoje! 🔥  
+Qual vai ser sua primeira compra? Me conta depois! 😄✨
