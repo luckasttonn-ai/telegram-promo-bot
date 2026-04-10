@@ -13,10 +13,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: |
-            🌅 Bom dia, família! ☀️🌞
-            
-            Que tal começar o dia caçando as melhores promoções?
-            As ofertas diárias estão fresquinhas e esperando por você! 🛒💰
-            Fique de olho e não perca nenhuma chance de economizar hoje! 🔥
-            Qual vai ser sua primeira compra? Me conta depois! 😄✨
+          message: 🌅 Bom dia, família! ☀️🌞 Que tal começar o dia caçando as melhores promoções? As ofertas diárias estão fresquinhas e esperando por você! 🛒💰 Fique de olho e não perca nenhuma chance de economizar hoje! 🔥 Qual vai ser sua primeira compra? Me conta depois! 😄✨
