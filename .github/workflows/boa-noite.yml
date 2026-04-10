@@ -2,7 +2,7 @@ name: Postar Boa Noite
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # 20:00 da noite em horário de Brasília
+    - cron: '0 23 * * *'
 
 jobs:
   post:
@@ -13,10 +13,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: |
-            🌙 Boa noite, família! ⭐🌠
-            
-            Antes de dormir, dá uma olhadinha nas promoções que ainda estão valendo hoje!
-            As ofertas diárias foram incríveis e amanhã vem mais! 🛒💰
-            Qual foi a melhor promoção que você viu hoje?
-            Durma bem e sonhe com economias! 😴✨
+          message: 🌙 Boa noite, família! Antes de dormir, olhe as promoções que ainda estão valendo hoje! As ofertas diárias foram incríveis e amanhã vem mais! 🛒 Qual foi a melhor do dia? Durma bem! 😴
