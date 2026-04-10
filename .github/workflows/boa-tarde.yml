@@ -13,10 +13,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: |
-            ☀️ Boa tarde, família! 🌤️
-            
-            As promoções diárias estão bombando agora! 🔥
-            Não perca tempo e venha conferir as ofertas quentinhas do dia.
-            Tem coisa boa te esperando! 🛒💸
-            Qual promoção você vai aproveitar hoje? Me conta! 😊
+          message: ☀️ Boa tarde, família! 🌤️ As promoções diárias estão bombando agora! 🔥 Não perca tempo e venha conferir as ofertas quentinhas do dia. Tem coisa boa te esperando! 🛒💸 Qual promoção você vai aproveitar hoje? Me conta! 😊
